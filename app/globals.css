@@ -1,0 +1,159 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+
+  /* Minecraft biome palette (top of world -> bedrock) */
+  --color-sky-top: var(--sky-top);
+  --color-sky-bottom: var(--sky-bottom);
+  --color-cloud: var(--cloud);
+  --color-sun: var(--sun);
+
+  --color-grass: var(--grass);
+  --color-grass-dark: var(--grass-dark);
+  --color-dirt: var(--dirt);
+  --color-dirt-dark: var(--dirt-dark);
+
+  --color-stone: var(--stone);
+  --color-stone-dark: var(--stone-dark);
+  --color-cave: var(--cave);
+  --color-cave-deep: var(--cave-deep);
+  --color-bedrock: var(--bedrock);
+
+  --color-ore-diamond: var(--ore-diamond);
+  --color-ore-emerald: var(--ore-emerald);
+  --color-ore-amethyst: var(--ore-amethyst);
+  --color-ore-gold: var(--ore-gold);
+
+  --color-wood: var(--wood);
+  --color-wood-dark: var(--wood-dark);
+  --color-torch: var(--torch);
+
+  --font-pixel: var(--font-pixel), ui-monospace, monospace;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+:root {
+  color-scheme: light;
+  --background: #7ec0ee;
+  --foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.25);
+
+  --sky-top: #4a97d6;
+  --sky-bottom: #b7e3ff;
+  --cloud: #ffffff;
+  --sun: #ffe58a;
+
+  --grass: #6cbb3c;
+  --grass-dark: #4e8a29;
+  --dirt: #8b5a34;
+  --dirt-dark: #6b4423;
+
+  --stone: #8c8c8c;
+  --stone-dark: #5c5c5c;
+  --cave: #3a3a40;
+  --cave-deep: #23232a;
+  --bedrock: #1a1a1f;
+
+  --ore-diamond: #4fd0e0;
+  --ore-emerald: #46c66a;
+  --ore-amethyst: #b06cf0;
+  --ore-gold: #f5c542;
+
+  --wood: #a9713f;
+  --wood-dark: #7a4f2a;
+  --torch: #ffb02e;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  /* crisp, blocky pixel rendering for any generated textures */
+  .pixelated {
+    image-rendering: pixelated;
+  }
+
+  /* chunky Minecraft-style raised block edge (top/left light, bottom/right dark) */
+  .block-3d {
+    box-shadow:
+      inset 4px 4px 0 0 rgba(255, 255, 255, 0.28),
+      inset -4px -4px 0 0 rgba(0, 0, 0, 0.35);
+  }
+  .block-3d-strong {
+    box-shadow:
+      inset 5px 5px 0 0 rgba(255, 255, 255, 0.35),
+      inset -5px -5px 0 0 rgba(0, 0, 0, 0.45);
+  }
+  /* pressed / inset slot look (crafting slot, inventory) */
+  .block-inset {
+    box-shadow:
+      inset -4px -4px 0 0 rgba(255, 255, 255, 0.18),
+      inset 4px 4px 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-pixel {
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45);
+  }
+  .text-shadow-pixel-sm {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes float-cloud {
+  from {
+    transform: translateX(-10vw);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes torch-flicker {
+  0%,
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.85;
+    filter: brightness(1.25);
+  }
+}
+@keyframes ore-glow {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+}
