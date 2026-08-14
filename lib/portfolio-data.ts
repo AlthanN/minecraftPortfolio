@@ -54,7 +54,7 @@ export const experience: ExperienceItem[] = [
     company: 'CodeCollab',
     period: 'May 2025 — March 2026',
     points: [
-      'Designed PathFinder, an AI Chatbot for academic assistance and career-exploration using Streamlit within a 4 person team',
+      'Designed PathFinder, an AI Chatbot for academic assistance and career-exploration within a 4 person team',
       'Developed a reusable portfolio website with React and Tailwind CSS, allowing for students to adopt as their own template',
       'Participated in Agile-like workflow with regular stand-ups and sprint reviews, keeping projects on schedule'
     ],
