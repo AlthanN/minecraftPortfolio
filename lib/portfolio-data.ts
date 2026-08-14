@@ -9,10 +9,10 @@ export const profile = {
 export const about = {
   heading: 'About Me',
   paragraphs: [
-    "Hey! I'm a rising junior studying Computer Science at Umass Amherst, and I am passionate about creating projects that make an impact! I enjoy creating products that makes peoples' lives easier and more enjoyable. I also enjoy working with AI/ML!",
+    "I'm a junior studying CS at Umass Amherst, and I am passionate about creating end to end projects that make an impact! I enjoy creating projects that make peoples' lives easier and enjoyable!",
   ],
   stats: [
-    { label: 'Years Coding', value: '6+' },
+    { label: 'Years Coding', value: '4+' },
     { label: 'Projects Shipped', value: '40+' },
     { label: 'Coffee Blocks Mined', value: '9999' },
   ],

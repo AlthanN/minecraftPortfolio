@@ -17,25 +17,14 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Alex Stone — Portfolio',
+  title: 'Althan Nguyen — Portfolio',
   description:
     'A block-by-block personal portfolio: About, Experience, Projects and Contact, dug straight out of a Minecraft world.',
-  generator: 'v0.app',
   icons: {
-    icon: [
+    icon: 
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/webLogo.png',
       },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
     apple: '/apple-icon.png',
   },
 }

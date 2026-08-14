@@ -57,7 +57,7 @@ export function SkyAbout() {
         >
           <img
             src="/skiTestPohoto.png"
-            alt="Pixel-art portrait of Alex Stone"
+            alt="Photo of me, Althan Nguyen"
             className="pixelated h-full w-full object-cover"
           />
         </div>
@@ -70,14 +70,19 @@ export function SkyAbout() {
         <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-white/95 sm:text-lg">
           {profile.tagline}
         </p>
-
-        {/* About card floating in the sky */}
-        <div className="mt-20 grid w-full gap-6 text-left md:grid-cols-[1.4fr_1fr]">
-          <div className="block-3d border-4 border-dirt-dark bg-dirt/85 p-6 backdrop-blur-sm sm:p-8">
+        {/* About card as a floating grass block */}
+        <div
+          className="mt-20 w-full max-w-2xl text-left block-3d-strong"
+        >
+          {/* Grass top holds the heading */}
+          <div className="block-3d border-4 border-grass-dark bg-grass/90 px-5 py-4 text-center">
             <h2 className="font-pixel text-lg text-cloud text-shadow-pixel-sm sm:text-xl">
               {about.heading}
             </h2>
-            <div className="mt-5 space-y-4">
+          </div>
+          {/* Dirt body */}
+          <div className="block-3d border-4 border-dirt-dark bg-dirt/85 p-6 backdrop-blur-sm sm:p-8">
+            <div className="space-y-4">
               {about.paragraphs.map((p) => (
                 <p key={p} className="leading-relaxed text-white/95">
                   {p}
@@ -98,22 +103,6 @@ export function SkyAbout() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            {about.stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="block-3d border-4 border-grass-dark bg-grass/90 px-5 py-4 text-center"
-              >
-                <div className="font-pixel text-xl text-cloud text-shadow-pixel-sm sm:text-2xl">
-                  {stat.value}
-                </div>
-                <div className="mt-2 text-xs font-semibold uppercase tracking-wide text-white/90">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
