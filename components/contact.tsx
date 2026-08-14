@@ -35,9 +35,7 @@ export function Contact() {
         <Torch className="right-6 top-24 hidden sm:flex" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 text-center sm:py-24">
-          <p className="font-pixel text-[10px] text-torch text-shadow-pixel-sm">
-            ── The Treasure Chamber ──
-          </p>
+          
           <h2 className="mt-6 font-pixel text-2xl text-cloud text-shadow-pixel sm:text-3xl">
             Contact
           </h2>
@@ -95,9 +93,7 @@ export function Contact() {
                 <span className="mt-2 text-sm font-semibold text-white/90">
                   {c.handle}
                 </span>
-                <span className="mt-3 text-xs leading-relaxed text-white/60">
-                  {c.blurb}
-                </span>
+                
                 <span className="mt-4 inline-flex items-center gap-1 font-pixel text-[9px] text-torch">
                   OPEN <ExternalLink aria-hidden="true" className="h-3 w-3" />
                 </span>
@@ -119,7 +115,7 @@ export function Contact() {
         />
         <footer className="border-t-4 border-black bg-bedrock px-4 py-6 text-center">
           <p className="font-pixel text-[9px] leading-relaxed text-white/50">
-            Built block by block · {new Date().getFullYear()} Alex Stone
+            Built block by block · {new Date().getFullYear()} Althan Nguyen
           </p>
         </footer>
       </div>

@@ -81,58 +81,75 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Enderchest',
+    title: 'Chicago Food Inspections',
     description:
-      'An end-to-end encrypted file vault that syncs your stuff across every dimension (device).',
-    tech: ['Next.js', 'Rust', 'WebCrypto'],
-    href: '#',
+      'ML classifer that analyzes data from Chicago food establishments to predict failing restaurants',
+    tech: ['ML', 'Streamlit', 'Python'],
+    href: 'https://chicago-food-inspections-11d.streamlit.app/',
     ore: 'diamond',
   },
   {
-    title: 'AutoFarm',
+    title: 'Minecraft Stats Tracker',
     description:
-      'A workflow automation tool that plants triggers and harvests results while you sleep.',
-    tech: ['TypeScript', 'Node.js', 'Postgres'],
-    href: '#',
+      'MCSR Stats Tracker for speedrunning statistics to analyze your performance',
+    tech: ['React', 'FastAPI', 'Next.js'],
+    href: 'https://github.com/AlthanN/MCSR-Stats-Tracker',
+    ore: 'amethyst',
+  },
+  
+  {
+    title: 'MoodScape',
+    description:
+      'A spotify analysis platform that caters your music taste into a virtual 3D world',
+    tech: ['React', 'three.js', 'postgreSQL', 'Next.js'],
+    href: 'https://github.com/AlthanN/Moodscape',
     ore: 'emerald',
   },
   {
-    title: 'MapMaker',
+    title: 'PathFinderAI',
     description:
-      'A procedural terrain generator and level editor for browser-based games.',
-    tech: ['React', 'Three.js', 'WebGL'],
+      'AI Chatbot that helps ytou decide your academic and professional career',
+    tech: ['Streamlit', 'Python', 'GeminiAI'],
     href: '#',
     ore: 'gold',
   },
   {
-    title: 'BeaconBoard',
+    title: 'uNotes',
     description:
-      'A team status dashboard that lights up like a beacon when something needs attention.',
-    tech: ['Next.js', 'SWR', 'Tailwind'],
-    href: '#',
+      'A platform where UMass students can create and share notes based on current and past classes',
+    tech: ['React', 'Supabase', 'Next.js'],
+    href: 'https://github.com/ahaan0502/COMPSCI-320',
+    ore: 'diamond',
+  },
+  {
+    title: 'UMass Food Finder',
+    description:
+      'A platform where UMass students can search food cravings within 2 weeks out of 4 dining halls',
+    tech: ['Python', 'HTML', 'CSS', 'JavaScript'],
+    href: 'https://github.com/mnedkova/hackathon2024',
     ore: 'amethyst',
   },
+  
 ]
 
 export const contacts = [
   {
     label: 'LinkedIn',
-    handle: '/in/alexstone',
-    href: 'https://linkedin.com',
+    handle: '/in/althan-nguyen',
+    href: 'https://linkedin.com/althan-nguyen',
     ore: 'diamond' as const,
-    blurb: 'Rare ore — great for professional trades.',
   },
   {
     label: 'GitHub',
-    handle: '@alexstone',
-    href: 'https://github.com',
+    handle: '@AlthanN',
+    href: 'https://github.com/AlthanN',
     ore: 'emerald' as const,
     blurb: 'Where all my crafting recipes live.',
   },
   {
     label: 'Instagram',
-    handle: '@alex.builds',
-    href: 'https://instagram.com',
+    handle: '@althan.nguyen',
+    href: 'https://instagram.com/althan.nguyen',
     ore: 'amethyst' as const,
     blurb: 'Screenshots from the build worlds.',
   },

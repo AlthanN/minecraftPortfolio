@@ -87,6 +87,7 @@ export function Projects() {
               <a
                 key={project.title}
                 href={project.href}
+                target='_blank'
                 className="group block-3d block border-4 border-stone-dark bg-stone/25 p-6 transition-transform hover:-translate-y-1"
               >
                 <div className="flex items-start justify-between gap-4">

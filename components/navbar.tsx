@@ -49,7 +49,7 @@ export function Navbar() {
                 'linear-gradient(var(--grass) 55%, var(--dirt) 55%)',
             }}
           />
-          <span className="hidden sm:inline">A. STONE</span>
+          <span className="hidden sm:inline">Althan Nguyen</span>
         </a>
 
         <button
