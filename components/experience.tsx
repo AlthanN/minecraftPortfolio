@@ -28,10 +28,7 @@ export function Experience() {
           <h2 className="text-center font-pixel text-2xl text-cloud text-shadow-pixel sm:text-3xl">
             Experience
           </h2>
-          <p className="mx-auto mt-5 max-w-lg text-center leading-relaxed text-white/90">
-            Every job placed one more block on the tower. Here&apos;s the build
-            history.
-          </p>
+          
 
           <ol className="mt-14 space-y-8">
             {experience.map((job, i) => (

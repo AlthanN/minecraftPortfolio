@@ -41,7 +41,7 @@ export function Contact() {
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-pretty leading-relaxed text-white/80">
             You&apos;ve dug all the way to bedrock. Mine one of these ore blocks
-            to reach me &mdash; each one links out to a different world.
+            to reach me!
           </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-3">

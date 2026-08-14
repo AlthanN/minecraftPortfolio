@@ -78,8 +78,7 @@ export function Projects() {
             Projects
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-center leading-relaxed text-white/80">
-            Deep in the mines, these are the rare ores I&apos;ve dug up and
-            crafted into real things.
+            Deep in the mines, here are some projects I've created.
           </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
