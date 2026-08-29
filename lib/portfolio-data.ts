@@ -2,7 +2,7 @@ export const profile = {
   name: 'Althan Nguyen',
   role: 'Full-Stack Developer and AI/ML Enthusiast',
   tagline:
-    'I mine problems, craft software, and place blocks until they become products.',
+    '',
   location: 'Overworld · Remote',
 }
 
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     description:
       'AI Chatbot that helps ytou decide your academic and professional career',
     tech: ['Streamlit', 'Python', 'GeminiAI'],
-    href: '#',
+    href: '',
     ore: 'gold',
   },
   {

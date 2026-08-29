@@ -77,9 +77,6 @@ export function Projects() {
           <h2 className="text-center font-pixel text-2xl text-cloud text-shadow-pixel sm:text-3xl">
             Projects
           </h2>
-          <p className="mx-auto mt-5 max-w-lg text-center leading-relaxed text-white/80">
-            Deep in the mines, here are some projects I've created.
-          </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {projects.map((project) => (
