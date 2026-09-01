@@ -108,7 +108,7 @@ export const projects: Project[] = [
   {
     title: 'PathFinderAI',
     description:
-      'AI Chatbot that helps ytou decide your academic and professional career',
+      'AI Chatbot that helps you decide your academic and professional career',
     tech: ['Streamlit', 'Python', 'GeminiAI'],
     href: '',
     ore: 'gold',
