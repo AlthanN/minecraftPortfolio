@@ -115,7 +115,7 @@ export function Contact() {
         />
         <footer className="border-t-4 border-black bg-bedrock px-4 py-6 text-center">
           <p className="font-pixel text-[9px] leading-relaxed text-white/50">
-            Built block by block · {new Date().getFullYear()} Althan Nguyen
+            {new Date().getFullYear()} Althan Nguyen 
           </p>
         </footer>
       </div>

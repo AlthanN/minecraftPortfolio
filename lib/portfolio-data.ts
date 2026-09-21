@@ -125,7 +125,7 @@ export const projects: Project[] = [
     title: 'UMass Craves',
     description:
       'A platform where UMass students can search food cravings within 2 weeks out of 4 dining halls',
-    tech: ['Python', 'HTML', 'CSS', 'JavaScript'],
+    tech: ['Python', 'Flask', 'JavaScript', 'Redis'],
     href: 'https://umasscraves.vercel.app',
     ore: 'amethyst',
   },
