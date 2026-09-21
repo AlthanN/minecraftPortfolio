@@ -85,7 +85,7 @@ export const projects: Project[] = [
     description:
       'ML classifer that analyzes data from Chicago food establishments to predict failing restaurants',
     tech: ['ML', 'Streamlit', 'Python'],
-    href: 'https://chicago-food-inspections-11d.streamlit.app/',
+    href: 'https://kh1z3r.github.io/chicago-food-inspections/',
     ore: 'diamond',
   },
   {
@@ -122,11 +122,11 @@ export const projects: Project[] = [
     ore: 'diamond',
   },
   {
-    title: 'UMass Food Finder',
+    title: 'UMass Craves',
     description:
       'A platform where UMass students can search food cravings within 2 weeks out of 4 dining halls',
     tech: ['Python', 'HTML', 'CSS', 'JavaScript'],
-    href: 'https://github.com/mnedkova/hackathon2024',
+    href: 'https://umasscraves.vercel.app',
     ore: 'amethyst',
   },
   
@@ -154,3 +154,4 @@ export const contacts = [
     blurb: 'Screenshots from the build worlds.',
   },
 ]
+
