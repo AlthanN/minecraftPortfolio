@@ -102,7 +102,7 @@ export const projects: Project[] = [
     description:
       'A spotify analysis platform that caters your music taste into a virtual 3D world',
     tech: ['React', 'three.js', 'postgreSQL', 'Next.js'],
-    href: 'https://github.com/AlthanN/Moodscape',
+    href: 'https://devpost.com/software/moodscape-58u7vz',
     ore: 'emerald',
   },
   {
